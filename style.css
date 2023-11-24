@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+#gameBox {
+    position: relative;
+    width: 375px; /* Adjust width as needed */
+    height: 375px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the game box horizontally */
+  }
+  
+  #restart {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%; /* Positioning the button at 50% from the top */
+    left: 50%; /* Positioning the button at 50% from the left */
+    transform: translate(-50%, -50%); /* Centering the button precisely */
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: none; /* Initially hidden */
+    cursor: pointer;
+  }
+  
+  
+  
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
